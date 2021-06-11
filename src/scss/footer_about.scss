@@ -1,0 +1,23 @@
+.about {
+    footer {
+        position: absolute;
+        bottom: 0.5vh;
+        width: 98vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        small {
+            padding: 0;
+            padding-bottom: 2vh;
+            color: rgb(117, 148, 197);
+        }
+
+        .scroll_up {
+            width: 30px;
+            animation: scroll_up 2s;
+            animation-iteration-count: infinite;
+        }
+    }
+}

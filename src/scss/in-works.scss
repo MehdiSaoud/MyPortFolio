@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.in-works {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: rgb(245, 250, 255);
+    outline: 0.5px solid rgb(117, 148, 197);
+    outline-offset: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .header {
+
+        grid-area: header;
+    
+        .menu {
+            opacity: 0;
+            animation: apparition 1s 2s forwards;
+            position: fixed;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: 15px;
+            left: 15px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: height 0.5s, width 0.5s, left 0.5s, top 0.5s, border-radius 0.3s;
+    
+            small {
+                padding-top: 20vh;
+                padding-bottom: 4vh;
+                font-family: 'Times New Roman', Times, sans-serif;
+                font-weight: lighter;
+                font-size: 0.5;
+                letter-spacing: 0.2em;
+                color: rgb(124, 124, 124);
+            }
+    
+            .follow {
+                padding-right: 0;
+                padding-top: 10vh;
+            }
+    
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 45vh;
+                width: 100vw;
+                transform: translate(calc(-50vw + 25px), calc(-50vh + 25px)) scale(0);
+                opacity: 0;
+                transition: transform 0.5s, opacity 0.3s; 
+            }
+    
+            li {
+                
+                list-style-type: none;
+    
+                a {
+    
+                    font-family: "PassionOne";
+                    text-decoration: none;
+                    color: rgb(117, 148, 197);
+                }
+    
+            }
+    
+            li:not(:last-child) {
+                margin-bottom: 5vh;
+            }
+    
+            .logo {
+                padding: 0;
+                width: 35vw;
+                height: 10vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+    
+                li {
+                    margin: 0;
+                }
+                
+                .linkedinblue,.githubblue {
+                    width: 35px;
+                }
+            }
+        }
+    
+        .open {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            height: 50px;
+            width: 50px;
+            top: 15px;
+            left: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    
+        .open-icon,
+        .open-icon::before,
+        .open-icon::after {
+            width: 30px;
+            height: 4px;
+            background-color: rgb(117, 148, 197);
+        }
+    
+    
+        .is-white::after,
+        .is-white,
+        .is-white::before {
+            background-color: white;
+        }
+    
+        .open-icon::before,
+        .open-icon::after {
+            content: '';
+            display: block;
+            transition: transform 0.3s;
+            
+        }
+    
+        .open-icon::before {
+            transform: translateY(-8px);
+        }
+    
+        .open-icon::after {
+            transform: translateY(4px);
+        }
+    
+        .is-open {
+            background-color: rgb(59, 59, 56);
+            height: 100vh;
+            width: 100vw;
+            border-radius: 0;
+            top: 0;
+            left: 0;
+    
+            ul {
+                font-size: 2.5em;
+                transform: none;
+                opacity: 1;
+            }
+    
+            .open-icon {
+                background-color: transparent;
+            }
+    
+            .open-icon::before {
+                transform: translateY(2.6px) rotate(45deg);
+            }
+    
+            .open-icon::after {
+                transform: translateY(-2px) rotate(-45deg);
+            }
+    
+            .is-white::before, .is-white::after {
+                background-color: rgb(117, 148, 197);
+            }
+        }
+    
+    }
+
+
+    article {
+        position: relative;
+        max-width: calc(100vw - 30px);
+        min-height: calc(100vh - 30px);
+            
+
+        .iphone_pastry, .iphone_pastry2, .desktop_roleplay, .desktop_feed, .iphone_hajime, .iphone_hajime2, .iphone_portfolio, .iphone_portfolio2 {
+            display: none;  
+        }
+
+       
+
+        .right_pastry, .right_roleplay, .right_feed, .right_hajime, .right_portfolio {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            max-width: calc(100vw - 30px);
+            overflow: hidden;
+
+            .titre {   
+                padding-top : 40px;
+                margin: 0;
+    
+                .h1-pastry {
+                    font-family: "Cormorant";
+                    font-size: 2.5em;
+                    margin-top: 16px;
+                    text-align: center;
+                }
+
+                .h1-roleplay {
+                    font-family: "Nopia";
+                    font-size: 2.5em;
+                    margin-top: 16px;
+                    text-align: center;
+                }
+
+                .h1-feed {
+                    font-family: "Feed";
+                    font-size: 2.5em;
+                    margin-top: 16px;
+                    text-align: center;
+                }
+
+                .h1-hajime {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 2.5em;
+                    margin-top: 16px;
+                    text-align: center;
+                }
+
+                .h1-portfolio {
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 2.5em;
+                    margin-top: 16px;
+                    text-align: center;
+                }
+    
+                .sous-titre {
+                    padding-top: 0;
+                    margin: 0;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: 1.1em;
+                    font-weight: bold;
+                    color: rgb(117, 148, 197);
+                    text-align: center;
+                 
+                }
+            }
+
+            .container-text {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 4vh;
+                
+
+                p {
+                    padding: 0 5vw;
+                    margin: 30px 0;
+                    font-family: "Ubuntu";
+                    font-weight: lighter;
+                    font-size: 1.1em;
+                    text-align: center;
+                }
+
+                .button_works {
+                    align-self: center;
+                    display: initial;
+                    padding: 2vh 10vw;
+                    text-align: center;
+                    color: black;
+                    background-color: rgb(117, 148, 197);
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 1em;
+                    font-family: "Ubuntu";
+                    font-weight: lighter;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        .right_pastry {
+            
+            .iphone_pastry3 {
+                width: 290px;
+                margin-top: 2vh;
+            }
+
+        }
+
+        .right_hajime {
+
+            .iphone_hajime3 {
+                width: 290px;
+                margin-top: 2vh;
+            }
+        }
+
+        .right_portfolio {
+
+            .iphone_portfolio3 {
+                width: 290px;
+                margin-top: 2vh;
+            }
+        }
+
+        .right_roleplay {
+
+            .desktop_roleplay2 {
+
+                width: 600px;
+            }
+        }
+
+        .right_feed {
+
+            .desktop_feed2 {
+                width: 600px;
+            }
+        }
+
+
+        .precedent {
+            position: absolute;
+            text-decoration: none;
+            color: rgb(245, 250, 255);
+            font-size: 0em;
+            bottom: 30px;
+            margin-top: 10px;
+            left: 30px;
+            display: flex;
+            align-items: center;
+
+            .left {
+                margin-right: 10px;
+                width: 30px;
+            }
+        } 
+        
+        .suivant {
+            position: absolute;
+            display: flex;
+            text-decoration: none;
+            color: rgb(245, 250, 255);
+            font-size: 0em;
+            bottom: 30px;
+            margin-top: 10px;
+            right: 30px;
+            align-items: center;
+
+            .right {
+                margin-left: 10px;
+                width: 30px;
+            }
+        }
+
+        .sidebar {
+            display: none;
+            position: absolute;
+            background-color: rgb(245, 250, 255);
+            bottom: 60px;
+            right: -26px;
+            left: unset;
+            padding-top: 5px;
+
+            .linkedin1, .github1 {
+                display: initial;
+            }
+
+            .linkedin2, .github2 {
+                display: none;
+            }
+        }
+            
+    }
+}
+
+
+
+@media (min-width: 550px) {
+
+    .in-works {
+
+        .header {
+
+            small {
+                padding-right: 17vw;
+                padding-top: 20vh;
+                padding-bottom: 4vh;
+            }
+
+            ul {
+                justify-content: flex-start;
+            }
+
+            .is-open {
+
+                width: 40vw;
+
+                ul {
+                    padding-right: 14vw;
+                }
+
+                .logo {
+                    width: 20vw;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 850px) {
+
+    .in-works {
+
+        .header {
+
+            .menu {
+                position: fixed;
+                justify-content: center;
+                left: 0;
+                top: 0; 
+                border-radius: 0;
+                width: 460px;
+                margin-top: 1vh;
+                background-color: rgb(245, 250, 255);
+
+                small {
+                    display: none;
+                }
+
+                ul {
+                    opacity: 0;
+                    animation: apparition 2s 2s forwards;
+                    padding: 5vh 0;
+                    transform: none;
+                    height: 100%;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+
+                li {
+                    font-size: 1.6em;
+                    padding: 0 30px;
+                }
+
+                .nav-is-white {
+
+                    a {
+                        color: white;
+                    }
+                }
+
+                li:not(:last-child) {
+                    margin-bottom: 0;
+                }
+
+                .is-open {
+                    height: 50px;
+                }
+
+                .open, .logo {
+                    display: none;
+                }
+            }
+            
+        }
+
+        article {
+
+            .sidebar {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (min-width: 1190px) {
+
+    .in-works {
+
+        outline: 0.5px solid rgb(117, 148, 197);
+        outline-offset: -35px;
+     
+
+        article {
+            width: calc(100vw - 70px);
+            max-height: calc(100vh - 70px);
+            display: grid;
+            grid-template-rows: none;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "div_l div_r";
+    
+            
+            .right_pastry, .right_roleplay, .right_feed, .right_hajime, .right_portfolio {
+                display: grid;
+                grid-template-rows: auto auto auto;
+                grid-template-columns: none;
+                grid-template-areas: 
+                    "titre"
+                    "texte"
+                    "bouton";
+
+                .iphone_pastry3, .desktop_roleplay2, .desktop_feed2, .iphone_hajime3, .iphone_portfolio3 {
+                    display: none;
+                }
+
+                .titre {
+                    grid-area: titre;
+                    align-items: flex-start;
+                    justify-content: center;
+                    font-size: 1.2em;
+                    margin-top: 0;
+                    padding: 0;
+                    margin-left: 210px;
+                    opacity: 0;
+                    animation: apparition_txt_works 1s 0.5s forwards;
+                    margin-bottom: 5vh;
+
+                    
+                    .h1-pastry {
+                        font-size: 3em;
+                        margin-top: 0px;
+                        text-align: initial;
+                    }
+    
+                    .h1-roleplay {
+                        font-size: 3em;
+                        margin-top: 8px;
+                        text-align: initial;
+                    }
+    
+                    .h1-feed {
+                        font-size: 3em;
+                        margin-top: 0px;
+                        text-align: initial;
+                    }
+    
+                    .h1-hajime {
+                        font-size: 3em;
+                        margin-top: 0px;
+                        text-align: initial;
+                    }
+    
+                    .h1-portfolio {
+                        font-size: 3em;
+                        margin-top: 0px;
+                        text-align: initial;
+                    }
+
+                    .sous-titre {
+                        text-align: initial;
+                    }
+                }
+                
+
+                .container-text {
+
+                    opacity: 0;
+                    animation: apparition 1.5s 1s forwards;
+
+                    .text {
+                        
+                        max-height: 41vh;
+                        overflow: auto;
+                        margin-bottom: 5vh;
+
+                        p {
+                            grid-area: texte;
+                            padding: 0;
+                            margin: 0;
+                            margin-bottom: 16px;
+                            margin-right: 16px;
+                            text-align: left;
+                            max-width: 35vw;
+                        } 
+
+                        ul {
+                            list-style: inside;
+                            margin-left: 16px;
+                            margin-bottom: 16px;
+
+                            li {
+                                font-family: "Ubuntu";
+                                font-weight: lighter;
+                                font-size: 1.1em;
+                                
+                            }
+                        }
+
+                        p:last-child {
+                            margin-bottom: 0px;
+                        }
+
+                    }
+
+                    .text::-webkit-scrollbar {
+                        width: 10px;             /* width of the entire scrollbar */
+                      }
+                    .text::-webkit-scrollbar-track {
+                        background:rgb(245, 250, 255);
+                        border-radius: 20px;       /* color of the tracking area */ 
+                        border: 3px solid rgb(245, 250, 255);
+    
+                      }
+                      
+                    .text::-webkit-scrollbar-thumb {
+                        background-color: rgb(117, 148, 197);  /* color of the scroll thumb */
+                        border-radius: 20px;       /* roundness of the scroll thumb */
+                        border: 3px solid rgb(245, 250, 255);
+                        width: 6px;
+                      }
+                    
+                    .button_works {
+                        align-self: flex-start;
+                        padding: 2vh 5vw;
+    
+                    }
+
+                }
+
+            }
+
+            .img_pastry {
+                margin-top: 0;
+                margin-left: 5vw;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: row;
+                opacity: 0;
+                animation: apparition_img_pastry 1s ease-out 0.5s forwards;
+
+
+                
+                .iphone_pastry {
+                    display: initial;
+                    width: 290px;
+                    margin: 0;
+                }
+                .iphone_pastry2 {
+                    display: initial;
+                    width: 300px;
+                    margin: 0;
+                }
+            }
+
+            .img_hajime {
+                margin-top: 0;
+                margin-left: 5vw;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: row;
+                opacity: 0;
+                animation: apparition_img_pastry 1s ease-out 0.5s forwards;
+
+
+                
+                .iphone_hajime {
+                    display: initial;
+                    width: 290px;
+                    margin: 0;
+                }
+                .iphone_hajime2 {
+                    display: initial;
+                    width: 290px;
+                    margin: 0;
+                }
+            }
+
+            .img_portfolio {
+                margin-top: 0;
+                margin-left: 5vw;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: row;
+                opacity: 0;
+                animation: apparition_img_pastry 1s ease-out 0.5s forwards;
+
+
+                
+                .iphone_portfolio {
+                    display: initial;
+                    width: 290px;
+                    margin: 0;
+                }
+                .iphone_portfolio2 {
+                    display: initial;
+                    width: 290px;
+                    margin: 0;
+                }
+            }
+
+            .img_roleplay {
+
+                .desktop_roleplay {
+                    display: initial;
+                    position: fixed;
+                    top: 60px;
+                    left: -740px;
+                    margin-left: 0;
+                    opacity: 0;
+                    animation: apparition_img_works 1s ease-out 0.5s forwards;
+                    width: 900px;
+                }
+
+            }
+
+
+            .img_feed {
+
+                .desktop_feed {
+                    display: initial;
+                    position: fixed;
+                    top: 60px;
+                    left: -740px;
+                    margin-left: 0;
+                    opacity: 0;
+                    animation: apparition_img_works 1s ease-out 0.5s forwards;
+                    width: 900px;
+                }
+            }
+
+
+
+           
+            .precedent {
+                position: fixed;
+                font-size: 1.3em;
+                left: 30px;
+                bottom: 2.5vh;
+                color: rgb(117, 148, 197);
+                margin-bottom: 0;
+                padding: 0 10px;
+                background-color: rgb(245, 250, 255);
+
+                .left {
+                    margin-right: 15px;
+                    width: 40px;
+                }
+
+            }
+
+            .suivant {
+                position: fixed;
+                font-size: 1.3em;
+                right: 30px;
+                bottom: 2.5vh;
+                color: rgb(117, 148, 197);
+                margin-bottom: 0;
+                padding: 0 10px;
+                background-color: rgb(245, 250, 255);
+
+                .right {
+                    margin-left: 15px;
+                    width: 40px;
+                }
+
+
+            }
+            
+        }
+
+    }
+}

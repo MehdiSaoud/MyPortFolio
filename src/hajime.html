@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hajime dem</title>
+    <link rel="stylesheet" href="scss/style.scss" />
+</head>
+<body>
+    <main>
+        <section class="in-works">
+            <header class="header">
+                <nav class="menu" id="menu">
+                    <small>Explore</small>
+                    <ul id="nav">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#pastry">Works</a></li>
+                        <li><a href="index.html#skills">Skills</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                    </ul>
+                    <small class="follow">Follow me</small>
+                    <ul class="logo">
+                        <li><a href="https://www.linkedin.com/in/mehdi-saoud-801885190/" onclick="window.open(this.href); return false;"><img class="linkedinblue" src="scss/linkedin1.png" alt="linkedin logo"></a></li>
+                        <li><a href="https://github.com/MehdiSaoud" onclick="window.open(this.href); return false;"><img class="githubblue" src="scss/github1.png" alt="github logo"></a></li>
+                    </ul>
+                    <div class="open" id="open">
+                        <div id="burger" class="open-icon"></div>
+                    </div>
+                </nav>
+
+            </header>
+
+            <article>
+                <div class="img_hajime">
+                    <img class="iphone_hajime" src="scss/sammsung_hajime.png" alt="iphone">
+                    <img class="iphone_hajime2" src="scss/sammsung2_hajime.png" alt="iphone">
+                </div>
+                <div class="right_hajime">
+                    <div class="titre">
+                        <h1 class="h1-hajime">Hadjime dem</h1>
+                        <p class="sous-titre">Générateur de devis</p>
+                    </div>
+                    <img class="iphone_hajime3" src="scss/sammsung_hajime.png" alt="iphone">
+                    <div class="container-text">
+                        <div class="text">
+                            <p>
+                                Cette application web est un formulaire de saisie d'information pour les personnes qui souhaitent acheter un service de déménagement. 
+                            </p>
+                            <p>
+                                Les données saisie par l'utilisateur sont envoyé à la base MongoDB, un devis est ensuite généré selon les données reçues.
+                            </p> 
+                            <p>
+                                Les maquettes ont été réalisées sur Figma avec l'aide d'un designer web junior.
+                            </p>
+                            <p>
+                                Pour l'intégration de cette application web nous avons utilisé la plateforme fullstack JavaScript MEAN (MongoDB | Express | AngularJS | NodeJS).
+                            </p>
+                            <p>
+                                Nous avons intégrer le stepper et les inputs du formulaire avec la librairie Angular Material.
+                            </p>
+                        </div>
+                        <a href="http://hadjime-dem.herokuapp.com/" onclick="window.open(this.href); return false;" class="button_works">Voir le site</a>
+                    </div>
+
+                </div>
+                
+                <a href="pastry.html" class="precedent">
+                    <img class="left" src="scss/gauche.png" alt="fleche gauche"> 
+                    PROJET PRECEDENT
+                </a>
+            
+                <a href="feed.html" class="suivant">
+                    PROJET SUIVANT
+                    <img class="right" src="scss/droite.png" alt="fleche droite"> 
+                </a>
+                    
+            
+
+                <ul class="sidebar">
+                    <li><a href="https://github.com/MehdiSaoud" onclick="window.open(this.href); return false;"><img class="github1" src="scss/github1.png" alt="github logo"></a></li>
+                    <li><a href="https://www.linkedin.com/in/mehdi-saoud-801885190/" onclick="window.open(this.href); return false;"><img class="linkedin1" src="scss/linkedin1.png" alt="linkedin logo"></a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <script src="js/waypoints.js"></script>
+    <script src="js/homescript.js"></script>
+</body>
+</html>

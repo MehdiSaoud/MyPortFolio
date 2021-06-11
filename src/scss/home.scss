@@ -1,0 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.home {
+    background: url(fond.jpg) no-repeat center fixed;
+    background-size:cover;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header"
+        "article"
+        "footer";
+}
+
+@import "header_home";
+@import "article_home";
+@import "footer_home";
+

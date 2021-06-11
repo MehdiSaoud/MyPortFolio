@@ -1,0 +1,41 @@
+article {
+    grid-area: article;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .name {
+        opacity: 0;
+        animation: apparition_name 1s 0.5s forwards;
+        font-family: "Valenciaga";
+        font-size: 2.5em;
+        margin: 15px;
+        color: rgb(221, 218, 218);
+    }
+
+    .poste {
+        opacity: 0;
+        animation: apparition_poste 1s 1.5s forwards;
+        font-family: "Modernspace";
+        font-weight: bolder;
+        color: rgb(117, 148, 197);
+    }
+
+}
+
+
+
+@media (min-width: 850px) {
+    article {
+
+        .name {
+            font-size: 4.5em;
+        }
+
+        .poste {
+            font-size: 1.2em;
+            letter-spacing: 0.4em;
+        }
+    }
+}

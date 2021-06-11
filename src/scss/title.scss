@@ -1,0 +1,263 @@
+.title {
+
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 25px;
+    padding-right: 6.5vw;
+    padding-bottom: 0;
+    width: 93vw;
+
+    .number, p, .date, .button {
+        display: none;
+    }
+
+    h2 {
+        font-family: "Ubuntu";
+        font-size: 3em;
+        margin-bottom: 2vh;
+        color: rgb(0, 0, 0);
+        text-align: right;
+    }
+
+    h3 {
+        font-family: "Ubuntu";
+        font-weight: bolder;
+        font-size: 1.5em;
+        text-align: right;
+    }
+
+    .number, h2, h3, p, .date, .button {
+        opacity: 0;
+        transform: translateY(50px) scale(0.3);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+   
+}
+
+.is-scrolled {
+
+    .title {
+
+        .number, h2, h3, p, .date, .button {
+            opacity: 1;
+            transform: none;
+        }
+    }
+}
+
+.works:nth-of-type(2) {
+
+    .title {
+
+        .number {
+            font-family: "Charm";
+            color: rgb(117, 148, 197);
+        }
+
+        p {
+            color: #959595;
+        }
+
+        .button {
+            border: 0.1em solid rgb(117, 148, 197);
+            transition: background-color 0.3s ease-in;
+        }
+
+        .button:hover {
+            background-color: rgb(117, 148, 197);
+            color: white;
+        }
+    }
+}
+
+
+.works:nth-of-type(3) {
+
+    .title {
+
+        .number {
+            font-family: "Charm";
+            color: white;
+        }
+
+        p {
+            color: #bbbbbb;
+        }
+
+        .button {
+            border: 0.1em solid white;
+            color: white;
+            transition: background-color 0.3s ease-in;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black;
+        }
+        
+    }
+}
+
+
+.works:nth-of-type(4) {
+
+    .title {
+
+        .number {
+            font-family: "Charm";
+            color: rgb(117, 148, 197);
+        }
+
+        p {
+            color: #959595;
+        }
+
+        .button {
+            border: 0.1em solid rgb(117, 148, 197);
+            transition: background-color 0.3s ease-in;
+        }
+
+        .button:hover {
+            background-color: rgb(117, 148, 197);
+            color: white;
+        }
+    }
+}
+
+
+.works:nth-of-type(5) {
+
+    .title {
+
+        .number {
+            font-family: "Charm";
+            color: white;
+        }
+
+        p {
+            color: #bbbbbb;
+        }
+
+        .button {
+            border: 0.1em solid white;
+            color: white;
+            transition: background-color 0.3s ease-in;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black;
+        }
+        
+    }
+}
+
+
+.works:nth-of-type(6) {
+
+    .title {
+
+        .number {
+            font-family: "Charm";
+            color: rgb(117, 148, 197);
+        }
+
+        p {
+            color: #959595;
+        }
+
+        .button {
+            border: 0.1em solid rgb(117, 148, 197);
+            transition: background-color 0.3s ease-in;
+        }
+
+        .button:hover {
+            background-color: rgb(117, 148, 197);
+            color: white;
+        }
+    }
+}
+
+
+@media (min-width: 1080px) {
+
+    .works {
+
+        div {
+
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .title {
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding-left: 8vw;
+                padding-right: 5vw;
+                margin-bottom: 5vh;
+                height: initial;
+                width: initial;
+
+
+                .number {
+                    display: initial;
+                    font-family: "Charm";
+                    margin: 0;
+                    font-size: 4em;
+                }
+
+                h2 {
+                    font-size: 3.5em;
+                    margin-bottom: 0;
+                }
+
+                h3 {
+                    font-size: 1.5em;
+                    margin-bottom: 2vh;
+                    text-align: left;
+                }
+
+                p {
+                    display: initial;
+                    padding-right:5vw;
+                    font-family: "Ubuntu";
+                    font-size: 1.1em;
+                }
+
+                .date {
+                    display: initial;
+                    font-family: "Modernspace";
+                    font-weight: bolder;
+                    font-size: 1.3em;
+                    margin: 3.5vh 0;
+                }
+
+
+                .button {
+                    display: initial;
+                    padding: 1.5vh 2.3vw;
+                    text-align: center;
+                    color: black;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-family: "Ubuntu";
+                    font-size: 1em;
+                    font-weight: lighter;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+
+            }
+
+            
+
+        }
+
+    }
+
+
+}

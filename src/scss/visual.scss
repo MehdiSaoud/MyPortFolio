@@ -1,0 +1,137 @@
+.visual {
+    opacity: 0;
+    transform: translateY(50px) scale(0.8);
+    transition: opacity 0.5s, transform 0.5s;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: visual;
+    padding: 50px;
+    width: 80vw;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+
+    .button-mobile {
+
+        position: absolute;
+        bottom: -20px;
+        right: 110px;
+        color: black;
+        padding: 1vh 4vw;
+        text-align: center;
+        font-family: "Ubuntu";
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: lighter;
+        cursor: pointer;
+    }
+
+}
+
+.is-scrolled {
+
+    .visual {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+.works:nth-of-type(2) {
+
+    .visual {
+        background-image: url("macarons.jpg");
+        border: 5px;
+        border-style: solid;
+        border-color: rgb(117, 148, 197);
+
+        .button-mobile {
+            background-color: rgb(117, 148, 197);
+        }
+    }
+}
+
+
+.works:nth-of-type(3) {
+
+    .visual {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+        border: 5px;
+        border-style: solid;
+        border-color: rgb(117, 148, 197);
+
+        img {
+            width: 50%;
+        }
+
+        .button-mobile {
+            background-color: rgb(117, 148, 197);
+        }
+    }
+}
+
+
+.works:nth-of-type(4) {
+
+    .visual {
+        background-image: url("fruit.jpeg");
+        border: 5px;
+        border-style: solid;
+        border-color: rgb(117, 148, 197);
+
+        .button-mobile {
+            background-color: rgb(117, 148, 197);
+        }
+    }
+}
+
+
+.works:nth-of-type(5) {
+
+    .visual {
+        background-image: url("jdr.jpg");
+        border: 5px;
+        border-style: solid;
+        border-color: white;
+
+        .button-mobile {
+            background-color: white;
+        }
+    }
+}
+
+
+.works:nth-of-type(6) {
+
+    .visual {
+        background-image: url("fond.jpg");
+        border: 5px;
+        border-style: solid;
+        border-color: rgb(117, 148, 197);
+
+        .button-mobile {
+            background-color: rgb(117, 148, 197);
+        }
+    }
+}
+
+
+@media (min-width: 1080px) {
+    .visual {
+        opacity: 1;
+        transform: none;
+        margin: 0;
+        padding: 0;
+        width: initial;
+        height: 100vh;
+        border: none !important;
+
+        .button-mobile {
+            display: none;
+        }
+    }
+}

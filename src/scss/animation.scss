@@ -1,0 +1,135 @@
+@keyframes apparition {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }  
+}
+
+
+@keyframes apparition_name {
+
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }  
+}
+
+
+
+@keyframes apparition_poste {
+
+    from {
+        transform: translateY(40px);
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }  
+}
+
+
+@keyframes apparition_scroll {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }  
+}
+
+
+@keyframes scroll_down {
+
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(20px);
+        opacity: 0;
+    }  
+}
+
+@keyframes scroll_up {
+
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-15px);
+        opacity: 0;
+    }  
+}
+
+
+
+@keyframes apparition_footer {
+
+    from {
+        transform: translateY(40px);
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }  
+}
+
+
+
+@keyframes apparition_img_works {
+
+    from {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 600px;
+        opacity: 1;
+    }  
+}
+
+@keyframes apparition_txt_works {
+
+    from {
+        margin-left: 210px;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 0;
+        opacity: 1;
+    }  
+}
+
+
+
+@keyframes apparition_img_pastry {
+
+    from {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }  
+}
+
+

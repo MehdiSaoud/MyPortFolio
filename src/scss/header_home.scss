@@ -1,0 +1,247 @@
+.header {
+
+    grid-area: header;
+
+    .menu {
+        opacity: 0;
+        animation: apparition 1s 1s forwards;
+        position: fixed;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 15px;
+        left: 15px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: height 0.5s, width 0.5s, left 0.5s, top 0.5s, border-radius 0.3s;
+
+        small {
+            padding-top: 20vh;
+            padding-bottom: 4vh;
+            font-family: 'Times New Roman', Times, sans-serif;
+            font-weight: lighter;
+            font-size: 0.5;
+            letter-spacing: 0.2em;
+            color: rgb(124, 124, 124);
+        }
+
+        .follow {
+            padding-right: 0;
+            padding-top: 10vh;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 45vh;
+            width: 100vw;
+            transform: translate(calc(-50vw + 25px), calc(-50vh + 25px)) scale(0);
+            opacity: 0;
+            transition: transform 0.5s, opacity 0.3s; 
+        }
+
+        li {
+            
+            list-style-type: none;
+
+            a {
+
+                font-family: "PassionOne";
+                text-decoration: none;
+                color: rgb(117, 148, 197);
+            }
+
+        }
+
+        li:not(:last-child) {
+            margin-bottom: 5vh;
+        }
+
+        .logo {
+            padding: 0;
+            width: 35vw;
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            li {
+                margin: 0;
+            }
+            
+            .linkedinblue,.githubblue {
+                width: 35px;
+            }
+        }
+    }
+
+    .open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        height: 50px;
+        width: 50px;
+        top: 15px;
+        left: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .open-icon,
+    .open-icon::before,
+    .open-icon::after {
+        width: 30px;
+        height: 4px;
+        background-color: rgb(117, 148, 197);
+    }
+
+
+    .is-white::after,
+    .is-white,
+    .is-white::before {
+        background-color: white;
+    }
+
+    .open-icon::before,
+    .open-icon::after {
+        content: '';
+        display: block;
+        transition: transform 0.3s;
+        
+    }
+
+    .open-icon::before {
+        transform: translateY(-8px);
+    }
+
+    .open-icon::after {
+        transform: translateY(4px);
+    }
+
+    .is-open {
+        background-color: rgb(59, 59, 56);
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+        top: 0;
+        left: 0;
+
+        ul {
+            font-size: 2.5em;
+            transform: none;
+            opacity: 1;
+        }
+
+        .open-icon {
+            background-color: transparent;
+        }
+
+        .open-icon::before {
+            transform: translateY(2.6px) rotate(45deg);
+        }
+
+        .open-icon::after {
+            transform: translateY(-2px) rotate(-45deg);
+        }
+
+        .is-white::before, .is-white::after {
+            background-color: rgb(117, 148, 197);
+        }
+    }
+
+}
+
+
+
+@media (min-width: 550px) {
+
+
+    .header {
+
+        small {
+            padding-right: 17vw;
+            padding-top: 20vh;
+            padding-bottom: 4vh;
+        }
+
+        ul {
+            justify-content: flex-start;
+        }
+
+        .is-open {
+
+            width: 40vw;
+
+            ul {
+                padding-right: 14vw;
+            }
+
+            .logo {
+                width: 20vw;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 850px) {
+    
+    .header {
+
+        .menu {
+            position: fixed;
+            justify-content: center;
+            left: 0;
+            top: 0; 
+            border-radius: 0;
+            width: 460px;
+            margin-top: 1vh;
+
+            small {
+                display: none;
+            }
+
+            ul {
+                opacity: 0;
+                animation: apparition 2s 2s forwards;
+                padding: 5vh 0;
+                transform: none;
+                height: 100%;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            li {
+                font-size: 1.6em;
+                padding: 0 30px;
+            }
+
+            .nav-is-white {
+
+                a {
+                    color: white;
+                }
+            }
+
+            li:not(:last-child) {
+                margin-bottom: 0;
+            }
+
+            .is-open {
+                height: 50px;
+            }
+
+            .open, .logo {
+                display: none;
+            }
+        }
+        
+    }
+}
