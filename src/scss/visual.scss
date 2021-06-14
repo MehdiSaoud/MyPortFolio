@@ -75,42 +75,13 @@
 }
 
 
+
 .works:nth-of-type(4) {
-
-    .visual {
-        background-image: url("fruit.jpeg");
-        border: 5px;
-        border-style: solid;
-        border-color: rgb(117, 148, 197);
-
-        .button-mobile {
-            background-color: rgb(117, 148, 197);
-        }
-    }
-}
-
-
-.works:nth-of-type(5) {
 
     .visual {
         background-image: url("jdr.jpg");
         border: 5px;
         border-style: solid;
-        border-color: white;
-
-        .button-mobile {
-            background-color: white;
-        }
-    }
-}
-
-
-.works:nth-of-type(6) {
-
-    .visual {
-        background-image: url("fond.jpg");
-        border: 5px;
-        border-style: solid;
         border-color: rgb(117, 148, 197);
 
         .button-mobile {
@@ -118,6 +89,7 @@
         }
     }
 }
+
 
 
 @media (min-width: 1080px) {

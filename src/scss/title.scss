@@ -112,74 +112,23 @@
         }
 
         p {
-            color: #959595;
+            color: #bbbbbb;
         }
 
         .button {
             border: 0.1em solid rgb(117, 148, 197);
+            color: black;
             transition: background-color 0.3s ease-in;
         }
 
         .button:hover {
             background-color: rgb(117, 148, 197);
-            color: white;
-        }
-    }
-}
-
-
-.works:nth-of-type(5) {
-
-    .title {
-
-        .number {
-            font-family: "Charm";
-            color: white;
-        }
-
-        p {
-            color: #bbbbbb;
-        }
-
-        .button {
-            border: 0.1em solid white;
-            color: white;
-            transition: background-color 0.3s ease-in;
-        }
-
-        .button:hover {
-            background-color: white;
             color: black;
         }
         
     }
 }
 
-
-.works:nth-of-type(6) {
-
-    .title {
-
-        .number {
-            font-family: "Charm";
-            color: rgb(117, 148, 197);
-        }
-
-        p {
-            color: #959595;
-        }
-
-        .button {
-            border: 0.1em solid rgb(117, 148, 197);
-            transition: background-color 0.3s ease-in;
-        }
-
-        .button:hover {
-            background-color: rgb(117, 148, 197);
-            color: white;
-        }
-    }
-}
 
 
 @media (min-width: 1080px) {
