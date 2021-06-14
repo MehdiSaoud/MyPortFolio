@@ -22,15 +22,15 @@ home.addEventListener('click', function() {
 });
 
 works.addEventListener('click', function() {
-    menu.classList.toggle('is-open');
+    menu.classList.remove('is-open');
 });
 
 skills.addEventListener('click', function() {
-    menu.classList.toggle('is-open');
+    menu.classList.remove('is-open');
 });
 
 about.addEventListener('click', function() {
-    menu.classList.toggle('is-open');
+    menu.classList.remove('is-open');
 });
 
 changeBurgerIds.forEach(function(id) {
