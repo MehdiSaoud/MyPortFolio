@@ -37,6 +37,20 @@
     }
 }
 
+.works:nth-of-type(5) {
+
+    .visual {
+        background-image: url("fond.jpg");
+        border: 5px;
+        border-style: solid;
+        border-color: white;
+
+        .button-mobile {
+            background-color: white;
+        }
+    }
+}
+
 
 .works:nth-of-type(4) {
 
