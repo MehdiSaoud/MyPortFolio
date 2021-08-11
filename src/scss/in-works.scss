@@ -322,7 +322,7 @@
 
             .desktop_roleplay2 {
 
-                width: 600px;
+                width: 450px;
             }
         }
 
@@ -417,6 +417,19 @@
 
                 .logo {
                     width: 20vw;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .in-works {
+        article {
+            .right_roleplay {
+                .desktop_roleplay2 {
+
+                    width: 600px;
                 }
             }
         }
