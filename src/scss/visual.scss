@@ -37,7 +37,7 @@
     }
 }
 
-.works:nth-of-type(5) {
+.works:nth-of-type(6) {
 
     .visual {
         background-image: url("fond.jpg");
@@ -52,7 +52,7 @@
 }
 
 
-.works:nth-of-type(4) {
+.works:nth-of-type(5) {
 
     .visual {
         background-image: url("macarons.jpg");
@@ -67,7 +67,7 @@
 }
 
 
-.works:nth-of-type(3) {
+.works:nth-of-type(4) {
 
     .visual {
         display: flex;
@@ -90,7 +90,7 @@
 
 
 
-.works:nth-of-type(2) {
+.works:nth-of-type(3) {
 
     .visual {
         background-image: url("jdr.jpg");
@@ -104,6 +104,26 @@
     }
 }
 
+.works:nth-of-type(2) {
+
+    .visual {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+        border: 5px;
+        border-style: solid;
+        border-color: white;
+
+        img {
+            width: 50%;
+        }
+
+        .button-mobile {
+            background-color: white;
+        }
+    }
+}
 
 
 @media (min-width: 1080px) {
