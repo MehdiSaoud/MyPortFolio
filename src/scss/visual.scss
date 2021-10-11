@@ -37,7 +37,7 @@
     }
 }
 
-.works:nth-of-type(6) {
+.works:nth-of-type(7) {
 
     .visual {
         background-image: url("fond.jpg");
@@ -52,10 +52,24 @@
 }
 
 
-.works:nth-of-type(5) {
+.works:nth-of-type(6) {
 
     .visual {
         background-image: url("macarons.jpg");
+        border: 5px;
+        border-style: solid;
+        border-color: rgb(117, 148, 197);
+
+        .button-mobile {
+            background-color: rgb(117, 148, 197);
+        }
+    }
+}
+
+.works:nth-of-type(5) {
+
+    .visual {
+        background-image: url("fruit.jpeg");
         border: 5px;
         border-style: solid;
         border-color: rgb(117, 148, 197);
