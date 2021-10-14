@@ -48,6 +48,36 @@
     }
 }
 
+
+.works:nth-of-type(8) {
+
+    .title {
+
+        .number {
+            font-family: "Charm";
+            color: white;
+        }
+
+        p {
+            color: #bbbbbb;
+        }
+
+        .button {
+            border: 0.1em solid white;
+            color: white;
+            transition: background-color 0.3s ease-in;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black;
+        }
+        
+    }
+}
+
+
+
 .works:nth-of-type(7) {
 
     .title {

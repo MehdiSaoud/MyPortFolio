@@ -176,13 +176,13 @@
         min-height: calc(100vh - 30px);
             
 
-        .iphone_pastry, .iphone_pastry2, .desktop_roleplay, .desktop_maison-vapeur, .desktop_feed, .iphone_hajime, .iphone_hajime2, .iphone_portfolio, .iphone_portfolio2 {
+        .iphone_pastry, .iphone_pastry2, .desktop_roleplay, .desktop_maison-vapeur, .desktop_feed, .iphone_hajime, .iphone_hajime2, .iphone_portfolio, .iphone_portfolio2, .borne, .borne2 {
             display: none;  
         }
 
        
 
-        .right_pastry, .right_roleplay, .right_feed, .right_hajime, .right_portfolio, .right_maison-vapeur {
+        .right_pastry, .right_roleplay, .right_feed, .right_hajime, .right_portfolio, .right_maison-vapeur, .right_borne {
 
             display: flex;
             align-items: center;
@@ -220,6 +220,13 @@
 
                 .h1-feed {
                     font-family: "Feed";
+                    font-size: 2.5em;
+                    margin-top: 16px;
+                    text-align: center;
+                }
+
+                .h1-borne {
+                    font-family: 'Poppins', sans-serif;
                     font-size: 2.5em;
                     margin-top: 16px;
                     text-align: center;
@@ -318,6 +325,16 @@
                 margin-top: 2vh;
             }
         }
+
+        .right_borne {
+
+            .borne3 {
+                width: 290px;
+                margin-top: 2vh;
+            }
+        }
+
+        
 
         .right_portfolio {
 
@@ -547,7 +564,7 @@
                 right: -26px;
                     
             }
-            .right_pastry, .right_roleplay, .right_feed, .right_hajime, .right_portfolio, .right_maison-vapeur {
+            .right_pastry, .right_roleplay, .right_feed, .right_hajime, .right_portfolio, .right_maison-vapeur, .right_borne {
                 display: grid;
                 grid-template-rows: auto auto auto;
                 grid-template-columns: none;
@@ -556,7 +573,7 @@
                     "texte"
                     "bouton";
 
-                .iphone_pastry3, .desktop_roleplay2, .desktop_maison-vapeur2, .desktop_feed2, .iphone_hajime3, .iphone_portfolio3 {
+                .iphone_pastry3, .desktop_roleplay2, .desktop_maison-vapeur2, .desktop_feed2, .iphone_hajime3, .iphone_portfolio3, .borne3 {
                     display: none;
                 }
 
@@ -607,6 +624,12 @@
                         font-size: 3em;
                         margin-top: 0px;
                         text-align: initial;
+                    }
+
+                    .h1-borne {
+                        font-size: 3em;
+                        margin-top: 0px;
+                        text-align: initial;   
                     }
 
                     .sous-titre {
@@ -727,6 +750,31 @@
                     display: initial;
                     width: 290px;
                     margin: 0;
+                }
+            }
+
+            .img_borne {
+                margin-top: 0;
+                margin-left: 5vw;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: row;
+                opacity: 0;
+                animation: apparition_img_pastry 1s ease-out 0.5s forwards;
+
+
+                
+                .borne {
+                    display: initial;
+                    width: 250px;
+                    margin: 0;
+                }
+                .borne2 {
+                    display: initial;
+                    width: 250px;
+                    margin: 0;
+                    margin-left: 60px;
                 }
             }
 

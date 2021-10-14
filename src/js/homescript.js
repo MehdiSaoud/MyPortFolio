@@ -8,9 +8,9 @@ var burger = document.getElementById('burger');
 var nav = document.getElementById('nav');
 var sidebar = document.getElementById('sidebar');
 
-var changeBurgerIds = ['maison-vapeur','roleplay', 'hajime', 'feed', 'pastry', 'portfolio', 'skills', 'about'];
+var changeBurgerIds = ['maison-vapeur','roleplay', 'hajime', 'feed', 'pastry', 'portfolio', 'borne', 'js_projects', 'skills', 'about'];
 
-var scrollIds = ['maison-vapeur', 'roleplay', 'hajime', 'feed', 'pastry', 'portfolio', 'skills'];
+var scrollIds = ['maison-vapeur', 'roleplay', 'hajime', 'feed', 'pastry', 'portfolio', 'borne', 'skills'];
 
 
 open.addEventListener('click', function() {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feed.</title>
+    <title>Hajime dem</title>
     <link rel="stylesheet" href="scss/style.scss" />
 </head>
 <body>
@@ -14,7 +14,7 @@
                     <small>Explore</small>
                     <ul id="nav">
                         <li><a href="index.html#home">Home</a></li>
-                        <li><a href="index.html#pastry">Works</a></li>
+                        <li><a href="index.html#hajime">Works</a></li>
                         <li><a href="index.html#skills">Skills</a></li>
                         <li><a href="index.html#about">About</a></li>
                     </ul>
@@ -31,43 +31,48 @@
             </header>
 
             <article>
-                <div class="img_feed">
-                    <img class="desktop_feed" src="scss/desktop_feed.png" alt="mac">
+                <div class="img_borne">
+                    <img class="borne" src="scss/borne1.png" alt="borne">
+                    <img class="borne2" src="scss/borne2.png" alt="borne">
                 </div>
-                <div class="right_feed">
+                <div class="right_borne">
                     <div class="titre">
-                        <h1 class="h1-feed">Feed.</h1>
-                        <p class="sous-titre">Conception d'un site vitrine</p>
+                        <h1 class="h1-borne">Borne</h1>
+                        <p class="sous-titre">Borne restaurant</p>
                     </div>
-                    <img class="desktop_feed2" src="scss/desktop_feed.png" alt="mac">
+                    <img class="borne3" src="scss/borne1.png" alt="borne">
                     <div class="container-text">
                         <div class="text">
                             <p>
-                                Ce site vitrine simple, fluide et pensé pour facilité la navigation est entièrement natif (HTML | CSS | JS)
+                                Cette application web est une borne de restaurant qui permet à l'utilisateur de remplir son panier avec différents produits qu'elle propose.
                             </p>
                             <p>
-                                Codé en mobile first, il est entièrement responsive grâce à l'utilisation des media queries et flexbox. <br>
-                                La convention BEM a été appliqué pour une meilleure organisation du code.
+                                Les produit choisi par l'utilisateur sont envoyé à la base MongoDB, le panier est ensuite rempli selon les données reçues.
                             </p> 
                             <p>
-                                J'ai utilisé la librairie Waypoints pour la détection de scroll et des keyframes pour les animations.
+                                Pour l'intégration de cette application web nous avons utilisé la stack MERN (MongoDB | Express | ReactJS | NodeJS).
+                            </p>
+                            <p>
+                                Le style à été intégré avec le pré-processeur SASS.
                             </p>
                         </div>
-                        <a href="https://feed-boutique.netlify.app" onclick="window.open(this.href); return false;" class="button_works">Voir le site</a>
+                        <a href="https://github.com/MehdiSaoud/Borne-Restaurant" onclick="window.open(this.href); return false;" class="button_works">Voir le repository</a>
                     </div>
 
                 </div>
                 
-                <a href="hajime.html" class="precedent">
+                <a href="feed.html" class="precedent">
                     <img class="left" src="scss/gauche.png" alt="fleche gauche"> 
                     PROJET PRECEDENT
                 </a>
-
-                <a href="borne.html" class="suivant">
+            
+                <a href="pastry.html" class="suivant">
                     PROJET SUIVANT
                     <img class="right" src="scss/droite.png" alt="fleche droite"> 
                 </a>
+                    
             
+
                 <ul class="sidebar">
                     <li><a href="https://github.com/MehdiSaoud" onclick="window.open(this.href); return false;"><img class="github1" src="scss/github1.png" alt="github logo"></a></li>
                     <li><a href="https://www.linkedin.com/in/mehdi-saoud-801885190/" onclick="window.open(this.href); return false;"><img class="linkedin1" src="scss/linkedin1.png" alt="linkedin logo"></a></li>
